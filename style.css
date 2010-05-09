@@ -179,11 +179,11 @@ code {
 			margin-bottom: 20px;
 			-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
 		}
-		#pages article:nth-child(even) {
+		#pages article:nth-child(odd) {
 			float: left;
 			margin-left: 20px;
 		}
-		#pages article:nth-child(odd) {
+		#pages article:nth-child(even) {
 			float: right;
 			margin-right: 20px;
 		}

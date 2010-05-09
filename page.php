@@ -1,14 +1,30 @@
 <?php get_header(); ?>
-<div id="content" class="narrowcolumn" role="main">
+<div id="content" role="main">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article class="post" id="post-<?php the_ID(); ?>">
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h1><?php the_title(); ?></h1>
 			<div class="entry">
-				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
-				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+				<?php the_content(null, true); ?>
 			</div>
+			<?php $postNotes = get_post_custom_values('post-note'); ?>
+			<?php if ($postNotes) : ?>
+				<div class="footnotes">
+					<ol>
+						<?php foreach ($postNotes as $i => $note) : ?>
+							<li	id="note-<?php echo $i + 1; ?>"><?php echo $note; ?></li>
+						<?php endforeach; ?>
+					</ol>
+				</div>
+			<?php endif; ?>
 		</article>
-	<?php endwhile; endif; ?>
-	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+		<nav class="pagination">
+			<ul>
+				<?php previous_post_link('<li class="prev">&laquo; %link</li>'); ?>
+				<?php next_post_link('<li class="next">%link &raquo;</li>') ?>
+			</ul>
+		</nav>
+	<?php endwhile; else: ?>
+		<p>Sorry, no posts matched your criteria.</p>
+	<?php endif; ?>
 </div>
 <?php get_footer(); ?>
