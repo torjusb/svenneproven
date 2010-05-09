@@ -1,0 +1,399 @@
+/*
+Theme Name: Svenneprøven 2010
+Version: 0.1
+Author: Torjus Bjåen
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body { line-height: 1; }
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display: block;
+}
+
+nav ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote: before, blockquote: after,
+q: before, q: after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000; 
+    font-style: italic;
+    font-weight: bold;
+}
+
+del { text-decoration:  line-through; }
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;   
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select { vertical-align: middle; }
+
+/* END OF RESET */
+
+
+body {
+	font-family: Baskerville, Cambria, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Helvetica;
+}
+
+a {
+	color: #0084BD;
+	text-decoration: none;
+}
+
+sup {
+	vertical-align: super;
+	font-size: 10px;
+	font-weight: 700;
+}
+
+code {
+	font-family:  Monaco, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+	font-size: 12px;
+}
+
+
+#wrapper {
+	width: 860px;
+	margin: 50px auto;
+}
+	#wrapper > header {
+		padding: 20px;
+		border-bottom: 3px double #A8A8A8;
+	}
+		#wrapper > header h1 {
+			font-size: 30px;
+			text-transform: uppercase;
+			font-family: Georgia, Times, 'Times New Roman', serif;
+		}
+			#wrapper > header h1 a { color: #000; }
+			#wrapper > header h1 a:hover { color: #0084BD; }
+			
+		#wrapper > header h2 {
+			font-size: 14px;
+			font-weight: 400;
+			color: #787878;
+			font-family: Georgia, Times, 'Times New Roman', serif;
+		}
+			
+	
+	#wrapper #intro {
+		padding: 40px 20px;
+		border-bottom: 1px solid #d4d4d4;
+		margin-bottom: 40px;
+		overflow: hidden;
+	}
+		#wrapper #intro h1 {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		#wrapper #intro .entry {
+			-moz-column-count: 2;
+			-moz-column-gap: 20px;
+			margin: 0;
+		}
+		#wrapper #intro .continue-reading {
+			text-transform: uppercase;
+			float: right;
+			margin-top: 20px;
+
+		}
+
+
+	
+	#content h1 {
+		font-size: 30px;
+		padding: 10px 20px;
+		margin: 20px 0;
+		border-bottom: 2px solid #eee;
+	}
+	
+	
+	#pages { overflow: hidden; }
+		#pages article {
+			display: block;
+			position: relative;
+			width: 398px;
+			border: 1px solid #ddd;
+			height: 150px;
+			margin-bottom: 20px;
+			-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+		}
+		#pages article:nth-child(even) {
+			float: left;
+			margin-left: 20px;
+		}
+		#pages article:nth-child(odd) {
+			float: right;
+			margin-right: 20px;
+		}
+			#pages article p {
+				position: absolute;
+				background: rgba(0, 0, 0, .5);
+				display: block;
+				width: 100%;
+				bottom: 0;
+			}
+				#pages article p span {
+					display: block;
+					padding: 10px;
+					color: #fff;
+				}
+			#pages article a:hover span {
+				color: #0084BD;
+			}
+	
+	
+	.entry {
+		margin: 0 40px 0 150px;
+	}	
+		.entry p {
+			margin-bottom: 15px;
+			line-height: 1.4;
+		}
+		
+		.entry h2 {
+			font-size: 25px;
+			font-weight: 400;
+			border-bottom: 2px solid #eee;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+		}
+		.entry h3 {
+			font-size: 18px;
+			margin-top: 30px;
+			margin-bottom: 5px;
+		}
+		
+		.entry dl {
+			margin-bottom: 15px;
+		}
+			.entry dl dt {
+				font-weight: 700;
+				margin-top: 5px;
+			}
+			.entry dl dd {
+				padding-top: 5px;
+				padding-left: 20px;
+			}
+		
+		.entry ul, .entry ol {
+			margin-bottom: 15px;
+		}
+			.entry li {
+				line-height: 1.4;
+			}
+		
+		.entry a:hover { border-bottom: 1px solid; }
+		.entry a:active { background: #DBF5FF; }
+		
+		.entry table {
+			border: 1px solid #ddd;
+		}
+			.entry table th {
+				background: #eee;
+			}
+			.entry table th, .entry table td {
+				padding: 5px;
+			}
+		
+		.entry pre {
+			margin: 20px 0 20px -130px;
+			padding: 15px;
+			width: 800px;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			overflow: hidden;
+			background: #eee;
+		}
+		
+		.entry blockquote {
+			background: #eee;
+			padding: 10px;
+			float: right;
+			width: 250px;
+			margin: 10px -20px 10px 0;
+			position: relative;
+			right: -20px;
+			border-left: 2px solid #ddd;
+		}
+			.entry blockquote p:first-of-type:before {
+				content: "«";
+				float: left;
+				padding-right: 2px;
+				margin-top: -1px;
+			}
+			.entry blockquote > p:first-of-type:after {
+				content: "»";
+				padding-left: 2px;
+			}
+
+			.entry blockquote p {
+				margin-bottom: 0;
+			}
+			
+			.entry blockquote cite {
+				display: block;
+				text-align: right;
+			}
+			.entry blockquote cite:before {
+				content: "—";
+				padding-right: 3px;
+			}
+		
+		.entry .wp-caption.alignleft, .entry img.alignleft {
+			float: left;
+			position: relative;
+			margin-left: -130px;
+			margin-right: 20px;
+			margin-top: 10px;
+		}
+		.entry .wp-caption.alignright, .entry img.alignright {
+			float: right;
+			margin-right: -20px;
+			margin-top: 10px;
+			margin-left: 20px;
+		}
+		.entry .wp-caption.aligncenter, .entry img.aligncenter {
+			margin: 0 auto;
+			display: block;
+		}
+		
+	
+	#content .footnotes {
+		font-size: 13px;
+		padding: 20px 0 20px 150px;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+		#content .footnotes li {
+			color: #333333;
+			padding: 5px;
+		}
+		#content .footnotes li:target {
+			background: #fdfdd5;
+		}
+	
+	#content .pagination {
+		overflow: hidden;
+		margin-top: 40px;
+	}
+		#content .pagination li { padding: 10px 20px; }
+		#content .pagination li.prev {
+			float: left;
+			border-right: 1px solid #eee;
+		}
+		#content .pagination li.next {
+			float: left;
+			border-left: 1px solid #eee;
+			float: right;
+		}
+		
+
+#schedule {
+	width: 810px;
+	margin-left: -130px;
+	margin-bottom: 100px;
+	font-family: Georgia;
+}	
+	#schedule thead {
+		border: 1px solid #fff;
+	}
+		#schedule thead tr {
+			background: #fff!important;
+		}
+			#schedule th {
+				padding: 10px;
+			}
+
+	#schedule tr:nth-child(odd) {
+		background: #f6f6f6;
+	}
+	#schedule tbody tr {
+		
+	}
+		#schedule tr td:first-child {
+			font-size: 13px;
+			font-style: italic;
+			width: 50px;
+			text-shadow: 1px 1px  #fff;
+			text-align: left;
+		}
+		#schedule td[rowspan] {
+		}
+		#schedule td {
+			border: 1px solid #999;
+			text-align: center;
+			padding: 10px;
+		}
+		
+		
+		
+#wrapper > footer {
+	padding: 20px;
+	font-size: 11px;
+	color: #666;
+	border-top: 3px double #eee;
+	text-shadow: -1px -1px #ddd;
+	font-family: Georgia;
+}
