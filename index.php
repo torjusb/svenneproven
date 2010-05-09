@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 <section id="intro">
 	<?php
-	$introId = 7;
-	$intro = get_page($introId);
+	$introId = 7; $intro = get_page($introId);
 	?>
 	<h1><?php echo $intro->post_title; ?></h1>
 	<div class="entry">
