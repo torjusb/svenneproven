@@ -87,6 +87,12 @@ input, select { vertical-align: middle; }
 
 /* END OF RESET */
 
+@font-face {
+	font-family: Franchise;
+	src: url(fonts/Franchise-Bold.ttf);
+	font-weight: bold;
+}
+
 
 body {
 	font-family: Baskerville, Cambria, 'Times New Roman', Times, serif;
@@ -99,6 +105,9 @@ h1, h2, h3, h4, h5, h6 {
 a {
 	color: #0084BD;
 	text-decoration: none;
+}
+a:hover {
+	color: #00A6EE;
 }
 
 sup {
@@ -162,45 +171,46 @@ code {
 
 	
 	#content h1 {
-		font-size: 30px;
+		font-size: 40px;
 		padding: 10px 20px;
 		margin: 20px 0;
 		border-bottom: 2px solid #eee;
+		font-family: Franchise;
+		letter-spacing: .7px;
 	}
 	
 	
 	#pages { overflow: hidden; }
-		#pages article {
+		#pages .article {
 			display: block;
 			position: relative;
 			width: 398px;
 			border: 1px solid #ddd;
 			height: 150px;
-			margin-bottom: 20px;
+			margin-bottom: 60px;
 			-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
 		}
-		#pages article:nth-child(even) {
+		#pages .article:nth-child(odd) {
 			float: left;
 			margin-left: 20px;
 		}
-		#pages article:nth-child(odd) {
+		#pages .article:nth-child(even) {
 			float: right;
 			margin-right: 20px;
 		}
-			#pages article p {
+			#pages .article a { display: block; }
+			#pages .article img {
+				padding: 2px;
+				color: #fff;
+				width: 394px;
+				height: 146px;
+			}
+			#pages .article p {
 				position: absolute;
-				background: rgba(0, 0, 0, .5);
 				display: block;
 				width: 100%;
-				bottom: 0;
-			}
-				#pages article p span {
-					display: block;
-					padding: 10px;
-					color: #fff;
-				}
-			#pages article a:hover span {
-				color: #0084BD;
+				bottom: -40px;
+				font-size: 18px;
 			}
 	
 	

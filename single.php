@@ -19,8 +19,8 @@
 		</article>
 		<nav class="pagination">
 			<ul>
-				<?php previous_post_link('<li class="prev">&laquo; %link</li>'); ?>
-				<?php next_post_link('<li class="next">%link &raquo;</li>') ?>
+				<?php next_post_link_menu('<li class="prev">&laquo; %link</li>'); ?>
+				<?php previous_post_link_menu('<li class="next">%link &raquo;</li>') ?>
 			</ul>
 		</nav>
 	<?php endwhile; else: ?>

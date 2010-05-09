@@ -1,28 +1,29 @@
 <?php get_header(); ?>
 <section id="intro">
-	<?php
-	$introId = 7; $intro = get_page($introId);
-	?>
-	<h1><?php echo $intro->post_title; ?></h1>
-	<div class="entry">
-		<?php
-			$content = apply_filters('the_content', $intro->post_content);
-			$content = str_replace(']]>', ']]&gt;', $content);
-			echo $content;
-		?>
-	</div>
-	<p class="continue-reading">
-		<a href="#">Les hele oppgaven</a> »
-	</p>
+	<?php query_posts( array('page_id' => 7)); ?>
+	<?php while (have_posts()) : the_post() ?>
+		<?php $more = 0; ?>
+		<h1><?php the_title(); ?></h1>
+		<div class="entry">
+			<?php the_content(''); ?>
+		</div>
+		<p class="continue-reading">
+			<a href="<?php the_permalink(); ?>">Les hele oppgaven</a> »
+		</p>
+	<?php endwhile; ?>
+	<?php wp_reset_query(); ?>
 </section>
-<div id="pages">
-	<?php if (have_posts()) : while (have_posts()) : the_post() ?>
-		<article>
-			<a href="<?php the_permalink(); ?>">	
-				<p><span><?php the_title(); ?></span></p>
-				<?php the_post_thumbnail(); ?>
-			</a>
-		</article>
-	<?php endwhile; endif; ?>
-</div>
+<nav id="pages">
+	<?php query_posts('orderby=menu_order & order=asc'); ?>
+	<ul>
+		<?php if (have_posts()) : while (have_posts()) : the_post() ?>
+			<li class="article">
+				<a href="<?php the_permalink(); ?>">	
+					<p><?php the_title(); ?></p>
+					<?php the_post_thumbnail(); ?>
+				</a>
+			</li>
+		<?php endwhile; endif; ?>
+	</ul>
+</nav>
 <?php get_footer(); ?>
