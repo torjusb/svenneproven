@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section id="intro">
-	<?php query_posts( array('page_id' => 7)); ?>
+	<?php query_posts( array('pagename' => 'Oppgaven') ); ?>
 	<?php while (have_posts()) : the_post() ?>
 		<?php $more = 0; ?>
 		<h1><?php the_title(); ?></h1>

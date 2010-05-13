@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<script>
 		jQuery( function ($) {
-			$('.fancybox').fancybox();
+			$('.fancybox').attr('rel', 'group1').fancybox({
+				padding : '5'
+			});
 		});
 	</script>
 </head>
