@@ -190,6 +190,7 @@ code {
 			margin-bottom: 60px;
 			-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
 		}
+
 		#pages .article:nth-child(odd) {
 			float: left;
 			margin-left: 20px;
