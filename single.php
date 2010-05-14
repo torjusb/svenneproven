@@ -18,7 +18,60 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h1><?php the_title(); ?></h1>
 			<div class="entry">
-				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
+				
+				<table class="chart">
+					<tfoot>
+						<tr>
+							<th scope="row" rowspan="2">Total</th>
+							<th scope="row">Antatt</td>
+							<td class="assumed">27.5</td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td>32</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="2">Research</th>
+							<th scope="row">Antatt</th>
+							<td class="assumed"><div><span style="width: 9.375%;">3</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td><div><span>4</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">Forbredelser</th>
+							<th scope="row">Antatt</th>
+							<td class="assumed"><div><span style="width: 12.72%;">3.5</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td><div><span>4</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">Implementering</th>
+							<th scope="row">Antatt</th>
+							<td class="assumed"><div><span style="width: 58.18%;">16</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td><div><span>18</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">Dokumentasjon</th>
+							<th scope="row">Antatt</th>
+							<td class="assumed"><div><span style="width: 18.18%;">5</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td><div><span>6</span></div></td>
+						</tr>
+					</tbody>
+				</table>
+			
+				<?php //the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
 			</div>
 			<?php $postNotes = get_post_custom_values('post-note'); ?>
 			<?php if ($postNotes) : ?>
