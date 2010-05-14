@@ -352,6 +352,28 @@ code {
 			display: block;
 		}
 		
+		
+		.entry .chart {
+		}
+			.entry .chart th[rowspan] {
+				vertical-align: middle;
+				width: 150px;
+			}
+			.entry .chart th {
+				background: #fff;
+				border: 1px solid #eee;
+				width: 100px;
+			}
+			
+			.entry .chart td {
+				border: 1px solid #eee;
+				width: 300px;
+			}
+				.entry .chart td div {
+					background: #7CE5FF;
+					width: 100px;
+				}
+		
 	
 	#content .footnotes {
 		font-size: 13px;

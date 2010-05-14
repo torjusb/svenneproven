@@ -18,7 +18,49 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h1><?php the_title(); ?></h1>
 			<div class="entry">
-				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
+				
+				<table class="chart">
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="2">Research</th>
+							<th scope="row">Antatt</th>
+							<td><div><span>3</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td><div><span>4</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">Forbredelser</th>
+							<th scope="row">Antatt</th>
+							<td><div><span>3.5</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td><div><span>4</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">Implementering</th>
+							<th scope="row">Antatt</th>
+							<td><div><span>16</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td><div><span>18</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">Dokumentasjon</th>
+							<th scope="row">Antatt</th>
+							<td><div><span>5</span></div></td>
+						</tr>
+						<tr>
+							<th scope="row">Reell</th>
+							<td><div><span>6</span></div></td>
+						</tr>
+					</tbody>
+				</table>
+			
+				<?php //the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
 			</div>
 			<?php $postNotes = get_post_custom_values('post-note'); ?>
 			<?php if ($postNotes) : ?>
