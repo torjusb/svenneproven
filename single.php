@@ -1,4 +1,18 @@
 <?php get_header(); ?>
+<?php $currentPageId = $post->ID; ?>
+<nav id="navlist">
+	<?php query_posts('orderby=menu_order & order=asc'); ?>
+	<ul>
+		<?php if (have_posts()) : while (have_posts()) : the_post() ?>
+			<?php if ($post->ID === $currentPageId) : ?>
+				<li class="current"><?php the_title(); ?></li>
+			<?php else : ?>
+				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+			<?php endif; ?>
+		<?php endwhile; endif; ?>
+	</ul>
+	<?php wp_reset_query(); ?>
+</nav>
 <div id="content" role="main">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
