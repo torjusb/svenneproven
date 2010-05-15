@@ -154,6 +154,7 @@ code {
 			-moz-column-gap: 20px;
 			margin: 0;
 		}
+			#wrapper #intro .entry p { padding: 0; }
 		#wrapper #intro .continue-reading {
 			text-transform: uppercase;
 			float: right;
