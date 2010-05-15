@@ -297,11 +297,11 @@ code {
 			position: relative;
 			margin: 5px 0 15px -20px;
 			border-top: 1px solid #ddd;
-			border-bottom: 1px solid #ddd;
 		}
 		
 		.entry pre {
 			border-top: 1px solid #fff;
+			border-bottom: 1px solid #ddd;
 			padding: 15px;
 			overflow-x: auto;
 			background: #f7f7f7;
