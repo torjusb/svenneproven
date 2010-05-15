@@ -89,6 +89,7 @@ input, select { vertical-align: middle; }
 
 body {
 	font-family: Baskerville, Cambria, 'Times New Roman', Times, serif;
+	background: url(images/bg.png) no-repeat top center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,7 +118,11 @@ code {
 
 #wrapper {
 	width: 860px;
-	margin: 50px auto;
+	margin: 0 auto;
+	padding: 50px 0;
+	background: rgba(255, 255, 255, .5);
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
 }
 	#wrapper > header {
 		padding: 20px;
@@ -207,6 +212,7 @@ code {
 			}
 			
 	#content {
+
 	}
 	
 	#navlist {
@@ -303,13 +309,12 @@ code {
 		
 		.entry blockquote {
 			background: #eee;
-			padding: 10px;
 			float: right;
-			width: 250px;
-			margin: 10px -20px 10px 0;
+			width: 270px;
+			margin: 10px 0 10px 10px;
 			position: relative;
-			right: -20px;
-			border-left: 2px solid #ddd;
+			border: 1px solid #ddd;
+			border-right: 0;
 		}
 			.entry blockquote p:first-of-type:before {
 				content: "«";
@@ -325,6 +330,8 @@ code {
 			.entry blockquote p {
 				margin-bottom: 0;
 				padding: 0;
+				padding: 10px;
+				border-left: 1px solid #fff;
 			}
 			
 			.entry blockquote cite {
