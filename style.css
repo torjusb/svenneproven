@@ -289,16 +289,16 @@ code {
 		
 		div.code {
 			position: relative;
-			margin-left: -20px;
+			margin: 5px 0 15px -20px;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
 		}
 		
 		.entry pre {
+			border-top: 1px solid #fff;
 			padding: 15px;
-			border-top: 1px solid #ddd;
-			border-bottom: 1px solid #ddd;
 			overflow-x: auto;
 			background: #f7f7f7;
-			margin: 5px 0 15px;
 		}
 		
 		.entry blockquote {
@@ -347,7 +347,19 @@ code {
 			float: right;
 			margin-top: 10px;
 			margin-left: 20px;
+			margin-right: -200px;
+			
+			-moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
+
 		}
+		
+		.entry a.fancybox img {
+		
+		}
+		.entry a.fancybox:hover img {
+			border-color: #00A6EE;
+		}
+		
 		.entry .wp-caption.aligncenter, .entry img.aligncenter {
 			margin: 0 auto;
 			display: block;

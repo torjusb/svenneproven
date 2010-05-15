@@ -10,7 +10,9 @@
 	<script>
 		jQuery( function ($) {
 			$('.fancybox').attr('rel', 'group1').fancybox({
-				padding : '5'
+				padding: 2,
+				transitionIn: 'elastic',
+				transitionOut: 'elastic'
 			});
 		});
 	</script>
