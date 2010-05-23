@@ -88,7 +88,7 @@ input, select { vertical-align: middle; }
 /* END OF RESET */
 
 body {
-	font-family: Baskerville, Cambria, 'Times New Roman', Times, serif;
+	font-family: Georgia, Baskerville, Cambria, 'Times New Roman', Times, serif;
 	background: url(images/bg.png) no-repeat top center;
 }
 
@@ -111,7 +111,7 @@ sup {
 }
 
 code {
-	font-family:  Monaco, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+	font-family:  Inconsolata, Monaco, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
 	font-size: 12px;
 }
 
@@ -137,10 +137,10 @@ code {
 			#wrapper > header h1 a:hover { color: #0084BD; }
 			
 		#wrapper > header h2 {
-			font-size: 14px;
+			font-size: 20px;
 			font-weight: 400;
 			color: #787878;
-			font-family: Georgia, Times, 'Times New Roman', serif;
+			font-family: 'Reenie Beanie', Georgia, Times, 'Times New Roman', serif;
 		}
 			
 	
@@ -242,6 +242,7 @@ code {
 			margin-bottom: 15px;
 			line-height: 1.4;
 			padding-right: 200px;
+			font-size: 15px;
 		}
 		
 		.entry h2 {
@@ -305,6 +306,8 @@ code {
 			padding: 15px;
 			overflow-x: auto;
 			background: #f7f7f7;
+			font-family: Inconsolata!important;
+			font-size: 14px;
 		}
 		
 		.entry blockquote {
