@@ -137,10 +137,10 @@ code {
 			#wrapper > header h1 a:hover { color: #0084BD; }
 			
 		#wrapper > header h2 {
-			font-size: 20px;
+			font-size: 15px;
 			font-weight: 400;
 			color: #787878;
-			font-family: 'Reenie Beanie', Georgia, Times, 'Times New Roman', serif;
+			font-family: Georgia, Times, 'Times New Roman', serif;
 		}
 			
 	

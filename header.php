@@ -7,7 +7,7 @@
 	<script src="<?php echo bloginfo('template_directory'); ?>/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
 	<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-	<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie|Crimson+Text|Inconsolata|Lobster" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie|Crimson+Text|Inconsolata|Molengo" rel="stylesheet" type="text/css">
 	<script>
 		jQuery( function ($) {
 			$('.fancybox').attr('rel', 'group1').fancybox({
