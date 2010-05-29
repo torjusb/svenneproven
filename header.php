@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie|Crimson+Text|Inconsolata|Molengo" rel="stylesheet" type="text/css">
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<script>
 		jQuery( function ($) {
 			$('.fancybox').attr('rel', 'group1').fancybox({
@@ -17,6 +18,11 @@
 			});
 		});
 	</script>
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/ie.css" type="text/css" media="screen" />
+	<![endif-->
 </head>
 <body>
 	<div id="wrapper">

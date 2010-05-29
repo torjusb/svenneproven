@@ -1,0 +1,17 @@
+#pages .article.row {
+	float: left;
+	margin-left: 20px;
+	margin-right: 0;
+}
+#pages .article {
+	float: right;
+	margin-right: 20px;
+}
+.entry pre {
+	font-family: 'Courier New'!important;
+}
+
+.fancybox {
+	display: block;
+	border: 0!important;
+}
