@@ -240,9 +240,10 @@ code {
 	}	
 		.entry p {
 			margin-bottom: 15px;
-			line-height: 1.4;
+			line-height: 1.5;
 			padding-right: 200px;
 			font-size: 15px;
+			color: #373737;
 		}
 		
 		.entry h2 {
@@ -250,15 +251,22 @@ code {
 			font-weight: 400;
 			padding-bottom: 10px;
 			margin-bottom: 0;
-			margin-top: 40px;
+			padding-top: 40px;
+			margin-left: -10px;
+			padding-left: 10px;
+			border-top: 1px solid #eee;
 		}
-		.entry h2:first-of-type {
-			margin-top: 0;
+		.entry h2:first-child {
+			padding-top: 0;
+			border: 0;
+		}
+		.entry h2 + h3 {
+			margin-top: 5px;
 		}
 		
 		.entry h3 {
 			font-size: 18px;
-			margin-top: 10px;
+			margin-top: 40px;
 			margin-bottom: 5px;
 		}
 		
@@ -311,13 +319,10 @@ code {
 		}
 		
 		.entry blockquote {
-			background: #eee;
-			float: right;
-			width: 270px;
-			margin: 10px 0 10px 10px;
-			position: relative;
-			border: 1px solid #ddd;
+			margin: 20px 40px;
 			border-right: 0;
+			font-style: italic;
+			padding-right: 160px;
 		}
 			.entry blockquote p:first-of-type:before {
 				content: "«";
@@ -335,6 +340,7 @@ code {
 				padding: 0;
 				padding: 10px;
 				border-left: 1px solid #fff;
+				color: #6E6E6E;
 			}
 			
 			.entry blockquote cite {
@@ -401,6 +407,27 @@ code {
 					display: block;
 				}
 		
+		.entry table {
+			border: 1px solid #ddd;
+			width: 620px;
+			margin: 10px 0 30px;
+		}
+			.entry thead {
+				font-family: Helvetica, sans-serif;
+				text-align: left;
+				color: #373737;
+			}
+			.entry th, .entry td {
+				padding: 10px 20px!important;
+				font-size: 14px;
+			}
+			.entry tr {
+				border-bottom: 1px solid #ddd;
+			}
+			.entry tfoot {
+				font-style: italic;
+			}
+		
 	
 	#content .footnotes {
 		font-size: 13px;
@@ -432,50 +459,19 @@ code {
 		}
 		
 
-#schedule {
 
-	margin-left: -130px;
-	margin-bottom: 100px;
-	font-family: Georgia;
-}	
-	#schedule thead {
-		border: 1px solid #fff;
-	}
-		#schedule th {
-			padding: 10px;
-			background: #fff;
-			font-family: Helvetica;
-			font-size: 14px;
-		}
+#schedule td {
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	padding: 10px!important;	
+	width: 90px;
+	line-height: 1.5;
+}
+#schedule td:empty {
+	background: #FAFAFA;
+}
 
-	#schedule tr:nth-child(odd) td:first-child {
-		background: #ddd;
-	}
-	#schedule tbody td {
-		
-	}
-		#schedule tr td:first-child {
-			font-size: 13px;
-			font-style: italic;
-			width: 50px;
-			text-shadow: 1px 1px  #fff;
-			text-align: left;
-			
-		}
-		#schedule td[rowspan] {
-		}
-		#schedule td {
-			border: 1px solid #999;
-			text-align: center;
-			padding: 10px;
-			font-size: 13px;
-			width: 90px;
-			background: #ededed url(images/pixel.gif) repeat-x top;
-		}
-		#schedule td:empty {
-			opacity: .5;
-		}
-		
+
 		
 		
 #wrapper > footer {
