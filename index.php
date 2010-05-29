@@ -16,13 +16,15 @@
 <nav id="pages">
 	<?php query_posts('orderby=menu_order & order=asc'); ?>
 	<ul>
+		<?php $i = 0; ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post() ?>
-			<li class="article">
+			<li class="article<?php echo $i % 2 === 0 ? ' row' : ''; ?>">
 				<a href="<?php the_permalink(); ?>">	
 					<p><?php the_title(); ?></p>
 					<?php the_post_thumbnail(); ?>
 				</a>
 			</li>
+			<?php $i++; ?>
 		<?php endwhile; endif; ?>
 	</ul>
 </nav>
