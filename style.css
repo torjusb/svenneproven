@@ -223,6 +223,7 @@ code {
 		border-left: 1px solid #eee;
 		position: relative;
 		z-index: 2;
+		line-height: 1.3;
 	}
 		#navlist li { padding: 10px; }
 		#navlist li.current {
@@ -230,10 +231,6 @@ code {
 			border-top: 1px dotted #eee;
 			background: #f6fdff;
 		}
-			#navlist li a {
-			
-			}
-	
 	
 	.entry {
 		margin: 0 20px 0 20px;
