@@ -147,7 +147,6 @@ code {
 	#wrapper #intro {
 		padding: 40px 20px;
 		border-bottom: 1px solid #d4d4d4;
-		margin-bottom: 40px;
 		overflow: hidden;
 	}
 		#wrapper #intro h1 {
@@ -179,7 +178,10 @@ code {
 	}
 	
 	
-	#pages { overflow: hidden; }
+	#pages {
+		overflow: hidden;
+		margin-top: 40px;
+	}
 		#pages .article {
 			display: block;
 			position: relative;

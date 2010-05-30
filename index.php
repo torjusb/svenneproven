@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<section id="intro">
-	<?php query_posts( array('pagename' => 'Oppgaven') ); ?>
-	<?php while (have_posts()) : the_post() ?>
-		<?php $more = 0; ?>
+<?php query_posts( array('pagename' => 'Oppgaven') ); ?>
+<?php while (have_posts()) : the_post() ?>
+	<?php $more = 0; ?>
+	<section id="intro">
 		<h1><?php the_title(); ?></h1>
 		<div class="entry">
 			<?php the_content(''); ?>
@@ -10,9 +10,9 @@
 		<p class="continue-reading">
 			<a href="<?php the_permalink(); ?>">Les hele oppgaven</a> »
 		</p>
-	<?php endwhile; ?>
-	<?php wp_reset_query(); ?>
-</section>
+	</section>
+<?php endwhile; ?>
+<?php wp_reset_query(); ?>
 <nav id="pages">
 	<?php query_posts('orderby=menu_order & order=asc'); ?>
 	<ul>
