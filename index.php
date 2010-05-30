@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <?php query_posts( array('pagename' => 'Oppgaven', 'post_status' => 'publish') ); ?>
 <?php while (have_posts()) : the_post() ?>
-	<?php printA($post); ?>
 	<?php $more = 0; ?>
 	<section id="intro">
 		<h1><?php the_title(); ?></h1>
