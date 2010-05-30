@@ -294,16 +294,6 @@ code {
 		.entry a:hover { border-bottom: 1px solid; }
 		.entry a:active { background: #DBF5FF; }
 		
-		.entry table {
-			border: 1px solid #ddd;
-		}
-			.entry table th {
-				background: #eee;
-			}
-			.entry table th, .entry table td {
-				padding: 5px;
-			}
-		
 		div.code {
 			position: relative;
 			margin: 5px 0 15px -20px;
@@ -419,8 +409,12 @@ code {
 				text-align: left;
 				color: #373737;
 			}
+				.entry th {
+					background: #eee;
+					padding: 10px 20px 6px!important;
+				}
 			.entry th, .entry td {
-				padding: 10px 20px!important;
+				padding: 10px 20px;
 				font-size: 14px;
 			}
 			.entry tr {
@@ -428,6 +422,7 @@ code {
 			}
 			.entry tfoot {
 				font-style: italic;
+				font-weight: 700;
 			}
 		
 	
