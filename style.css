@@ -204,7 +204,7 @@ code {
 			#pages .article a { display: block; }
 			#pages .article img {
 				padding: 2px;
-				color: #fff;
+				background: #fff;
 				width: 394px;
 				height: 146px;
 			}
