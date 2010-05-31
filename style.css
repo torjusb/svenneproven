@@ -262,7 +262,9 @@ code {
 			padding-top: 0;
 			border: 0;
 		}
-		.entry h2 + h3 {
+		.entry h2 + h3,
+		.entry .negative h3,
+		.entry .positive h3 {
 			margin-top: 5px;
 		}
 		
@@ -294,7 +296,16 @@ code {
 			.entry li ul, .entry li ol {
 				margin: 5px 0 5px 30px!important;
 			}
-		
+			
+			.entry .negative, .entry .positive {
+				float: left;
+				width: 300px;
+			}
+			.entry .positive + .negative {
+				margin-left: 40px;
+			}
+			
+			
 		.entry a:hover { border-bottom: 1px solid; }
 		.entry a:active { background: #DBF5FF; }
 		
@@ -481,5 +492,28 @@ code {
 	color: #666;
 	border-top: 3px double #eee;
 	text-shadow: -1px -1px #ddd;
-	font-family: Georgia;
+	clear: left;
+}
+
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
 }
