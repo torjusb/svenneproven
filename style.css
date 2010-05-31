@@ -290,6 +290,10 @@ code {
 			.entry li {
 				line-height: 1.4;
 			}
+			
+			.entry li ul, .entry li ol {
+				margin: 5px 0 5px 30px!important;
+			}
 		
 		.entry a:hover { border-bottom: 1px solid; }
 		.entry a:active { background: #DBF5FF; }
