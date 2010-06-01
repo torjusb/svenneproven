@@ -447,7 +447,7 @@ code {
 		    margin: 3px;
 		}
 		a.fancybox:hover {
-			border-color: #00A6EE;
+			border: 2px solid #00A6EE;
 		}
 
 		
