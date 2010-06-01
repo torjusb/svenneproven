@@ -256,7 +256,7 @@ code {
 			padding-top: 40px;
 			margin-left: -10px;
 			padding-left: 10px;
-			border-top: 1px solid #eee;
+			border-top: 2px solid #ddd;
 		}
 		.entry h2:first-child {
 			padding-top: 0;
@@ -270,7 +270,7 @@ code {
 		
 		.entry h3 {
 			font-size: 18px;
-			margin-top: 40px;
+			margin-top: 20px;
 			margin-bottom: 5px;
 		}
 		
