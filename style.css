@@ -439,6 +439,17 @@ code {
 				font-style: italic;
 				font-weight: 700;
 			}
+			
+			
+		a.fancybox {
+		    border: 2px solid #eee;
+		    display: inline-block;
+		    margin: 3px;
+		}
+		a.fancybox:hover {
+			border-color: #00A6EE;
+		}
+
 		
 	
 	#content .footnotes {
