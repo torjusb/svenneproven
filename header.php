@@ -16,6 +16,18 @@
 				transitionIn: 'elastic',
 				transitionOut: 'elastic'
 			});
+			
+			var pre = $('pre');
+			
+			pre.each( function () {
+				$(this).hide().wrap('<div class="codewrap" />').before('<a class="toggler" href="#">Vis/Skjul kode</a>');
+			});
+			
+			$('div.entry').delegate('a.toggler', 'click', function (e) {
+				e.preventDefault();
+				
+				$(this).next().toggle();
+			});
 		});
 	</script>
 	
