@@ -381,7 +381,6 @@ code {
 			float: right;
 			margin-top: 10px;
 			margin-left: 20px;
-			margin-right: -200px;
 			-moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
 			-webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
 
@@ -452,7 +451,7 @@ code {
 			}
 			
 			
-		a.fancybox {
+		a.fancybox.row {
 		    border: 2px solid #ddd;
 		    display: inline-block;
 		    margin: 3px;
